@@ -9,13 +9,24 @@
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background Animation -->
     <div class="background">
         <svg xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                        result="goo" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
                     <feBlend in="SourceGraphic" in2="goo" />
                 </filter>
             </defs>
@@ -33,134 +44,22 @@
         </div>
     </div>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="active">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#resume">RESUME</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact">CONTACT</a>
-            <a href="#extra">EXTRA</a>
-        </nav>
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-    </header>
-
-    <div class="container">
-        <section id="home" class="section">
-            <h2>Home</h2>
-            <p>Welcome to my website!</p>
-        </section>
-
-        <section id="about" class="section">
-            <div class="aboutmeClass">
-                <h2 class="heading">About me</h2>
-                <p class="aboutMe">
-                    Hi, my name is Anvi Kudaraya and I am a second-year (junior standing) at the University of
-                    California, Merced.
-                    I am majoring in Computer Science + Engineering and minoring in Cognitive Science. My interest in
-                    cognitive science
-                    has grown throughout the past year as I learned more about its intersection with technology,
-                    especially with AI/ML,
-                    as well as UI/UX design. I also like to explore new coding languages and finding ways algorithms can
-                    solve problems around us.
-                    Outside of coding, I enjoy going out with my friends, doing art, trying new things (especially food)
-                    and meeting new people.
-                    I hope to find internships based on my interest in software engineering/product designing and UI/UX
-                    designing.
-                </p>
-            </div>
-            <div class="myImage">
-                <img src="path/to/pic4.jpeg" alt="Anvi's Image">
-            </div>
-        </section>
-
-        <section id="resume" class="section">
-            <h2 class="heading">My Experiences</h2>
-            <div class="timeline">
-                <div class="timeline-container timeline-left-container">
-                    <img src="path/to/brainchain.png" alt="BrainChain">
-                    <div class="text-box">
-                        <h2>BrainChain</h2>
-                        <small>2018 - 2019</small>
-                        <p>Designed and implemented a comprehensive Python application that processes PDF documents,
-                            extracting only sentences containing dates and statistics using regular expressions in
-                            Python.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right-container">
-                    <img src="path/to/siyanee.png" alt="Siyanee">
-                    <div class="text-box">
-                        <h2>Siyanee</h2>
-                        <small>2018 - 2019</small>
-                        <p>Developed the UI/UX design, flowcharts, algorithms, and handled end-to-end design for an app
-                            to provide underprivileged kids with free courses in Hindi and math, enabling them to learn
-                            fundamental academic subjects through lessons and quizzes.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-left-container">
-                    <img src="path/to/fandaro.png" alt="Fandaro">
-                    <div class="text-box">
-                        <h2>Fandaro</h2>
-                        <small>2018 - 2019</small>
-                        <p>Researched ESG risks and successes across various industries, then developed an AI chatbot
-                            for Fandaro's website. The chatbot allows small to medium-sized businesses to input their
-                            statistics for analysis, providing insights into sustainability factors.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-                <div class="timeline-container timeline-right-container">
-                    <img src="path/to/nextgenpurpose.png" alt="NextGenPurpose">
-                    <div class="text-box">
-                        <h2>NextGenPurpose</h2>
-                        <small>2018 - 2019</small>
-                        <p>Executed social media strategies, gaining 1,500+ followers. Connected with businesses,
-                            secured sponsorships, researched newsletter content, and created daily marketing posts on
-                            Instagram and LinkedIn.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <a href="#" class="btn">Download CV</a>
-            </div>
-        </section>
-
-        <section id="portfolio" class="section">
-            <h2 class="heading">Portfolio</h2>
-            <div class="portfolio">
-                <div class="slider">
-                    <div class="slides" style="background-image: url('path/to/hackathon.jpeg')">
-                        <div class="portfolio-content"></div>
-                    </div>
-                    <div class="slides" style="background-image: url('path/to/numbertiles.jpeg')">
-                        <div class="portfolio-content"></div>
-                    </div>
-                    <div class="slides" style="background-image: url('path/to/Wordle.jpeg')">
-                        <div class="portfolio-content"></div>
-                    </div>
-                    <div class="slides" style="background-image: url('path/to/gumroad.jpeg')">
-                        <div class="portfolio-content"></div>
-                    </div>
-                </div>
-                <div class="portfolio-buttons">
-                    <span class="portfolio-prev"></span>
-                    <span class="portfolio-next"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2 class="heading">Contact</h2>
-            <p>Contact details here.</p>
-        </section>
-
-        <section id="extra" class="section">
-            <h2 class="heading">Extra</h2>
-            <p>Extra content here.</p>
-        </section>
-    </div>
+    <!-- Sections -->
+    <section class="home" id="home">
+        <h1>Home</h1>
+    </section>
+    <section class="about" id="about">
+        <h1>About</h1>
+    </section>
+    <section class="resume" id="resume">
+        <h1>Resume</h1>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact</h1>
+    </section>
 
     <script src="scripts.js"></script>
 </body>
