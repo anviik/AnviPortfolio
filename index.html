@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="timeline.css">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="home.css">
     <script src="https://kit.fontawesome.com/c8edc0ee61.js" 
     crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Anvi's Website</title>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header class="header">
+    <!-- <header class="header">
     <nav id="navbar">
         <ul>
             <li><a href="#home" class="nav-link">Home</a></li>
@@ -27,6 +31,24 @@
             <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/anvi-kudaraya-ba116320b/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/anviik" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxs-file' ></i></a>
+        </div>
+    </nav>
+</header> -->
+<header class="header">
+    <a href="#home" class="logo">Anvi <span>Kudaraya</span></a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
@@ -57,64 +79,60 @@
     <!-- Sections -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3><span class="first-name">Anvi</span><br><span class="last-name">Kudaraya</span></h3>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/anvi-kudaraya-ba116320b/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-                <a href="https://github.com/anviik" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxs-file' ></i></a>
-                
+            <h1>Hi, It's <span>Anvi</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>I am a second year (junior standing) at the University of California, Merced. I am majoring in Computer Science + Engineering and minoring in Cognitive Science. My interest in cognitive science has grown throughout the past year as I learned more about its intersection with technology, especially with AI/ML, as well as UI/UX design. I also like to explore new coding lanaguges and finding ways algorithms can solve problems around us. </p>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-gmail' ></i></a>
+                <a href="#"><i class='bx bxs-phone' ></i></a>
             </div>
 
+            <div class="btn-group">
+                <a href="#" class="btn">Resume</a>
+                <a href="#resume" class="btn">Experience</a>
+            </div>
         </div>
     </section>
+    
+   
 <!-- ------------------- about ------------------- -->
     
-    <section class="about" id="about">
-        <div class="aboutmeClass">
-            <h2 class="heading"> About me</h2>
-            <p class="aboutMe">Hi my name is Anvi Kudaraya and I am a second year (junior standing) at the 
-                University of California, Merced. I am majoring in Computer Science + Engineering and minoring
-                in Cognitive Science. My interest in cognitive science has grown throughout the past year as I 
-                learned more about its intersection with technology, especially with AI/ML, as well as UI/UX design.  
-                I also like to explore new coding lanaguges and finding ways algorithms can solve problems around us. 
-                Outside of coding, I enjoy going out with my friends, doing art, trying new things 
-                (especially food) and meeting new people. I hope to find internships based on my 
-                interest of software engineering/product designing and ui/ux desingning
-            </p>
-            </div>
-    </section>
+
 
 <!------------------------- resume ---------------------------------->
 
-    <section class="resume" id="resume">
+    <section class="resume" id="resume">   
+        <h1 class="title">·········   EXPERIENCE   ·········</h1>
         <div class="timeline">
 
             <div class="container left-container">
-                <img src="flower.jpeg">
+                <img src="images/merced.jpeg">
                 <div class="text-box">
                     <h2>Undergraduate Resercher</h2>
                     <small>2018-2019</small>
-                    <p>Developed the UI/UX design, flowcharts, algorithms, and handled end-to-end design for an app to
-                        provide underprivileged kids with free courses in Hindi and math, enabling them to learn fundamental
-                        academic subjects through lessons and quizzes.</p>
+                    <p>Collecting samples on field and running tests using Raspberry Pi's. Utilizing 
+                        C and Python to create software for the research
+                    </p>
                     <span class="left-container-arrow"></span>
                 </div>
             </div>
     
             <div class="container right-container">
-                <img src="flower.jpeg">
+                <img src="pics/merced.jpeg">
                 <div class="text-box">
                     <h2>Math Learning Assistant</h2>
                     <small>2018-2019</small>
-                    <p>Developed the UI/UX design, flowcharts, algorithms, and handled end-to-end design for an app to
-                        provide underprivileged kids with free courses in Hindi and math, enabling them to learn fundamental
-                        academic subjects through lessons and quizzes.</p>
+                    <p>Working with Professors to Co-teach Calculus 2 managing large classes ranging from 150-230 students
+                        Hosting weekly office hours to help tutor students on unclear topics and help prepare for class assessments + host Review Sessions in preparation for each Midterm.</p>
                         <span class="right-container-arrow"></span>
                 </div>
             </div>
     
             <div class="container left-container">
-                <img src="brainchain.png">
+                <img src="pics/brainchain.png">
                 <div class="text-box">
                     <h2>BrainChain</h2>
                     <small>May 2023 - August 2023</small>
@@ -124,7 +142,7 @@
             </div>
     
             <div class="container right-container">
-                <img src="siyanee.png">
+                <img src="pics/siyanee.png">
                 <div class="text-box">
                     <h2>Siyanee</h2>
                     <small>May 2022 - Septemeber 2022</small>
@@ -136,7 +154,7 @@
             </div>
     
             <div class="container left-container">
-                <img src="fandaro.png">
+                <img src="pics/fandaro.png">
                 <div class="text-box">
                     <h2>Fandaro</h2>
                     <small>May 2022 - August 2022</small>
@@ -146,7 +164,7 @@
             </div>
     
             <div class="container right-container">
-                <img src="nextgenpurpose.png">
+                <img src="pics/nextgenpurpose.png">
                 <div class="text-box">
                     <h2>NextGenPurpose</h2>
                     <small>April 2021 - Sept 2021</small>
@@ -160,54 +178,66 @@
 
 <!----------------------------- portfolio -------------------------->
     <section class="portfolio" id="portfolio">
+        <h1 class="title">·········   PROJECTS   ·········</h1>
         <div class="cards">
             <div class="card__container">
                <article class="card__article">
-                  <img src="hackathon.jpeg" alt="image" class="card__img">
+                  <img src="pics/hackathon.jpeg" alt="image" class="card__img">
    
                   <div class="card__data">
-                     <span class="card__description">Vancouver Mountains, Canada</span>
-                     <h2 class="card__title">The Great Path</h2>
+                    <h2 class="card__title">Wellness Website</h2>
+                     <span class="card__description"> mental health website that offers personalized exercises based on a short survey, a mood tracker for self-awareness, blog, and a feature that maps nearby well-being services.</span>
+                     <div class="icons">
+                     <i class='bx bxl-linkedin-square'></i>
+                     <a href="#"><i class='bx bxs-file' ></i></a>
+                    </div>
+                  </div>
+               </article>
+   
+               <article class="card__article">
+                  <img src="pics/gumroad.jpeg" alt="image" class="card__img">
+   
+                  <div class="card__data">
+                    <h2 class="card__title">Stats Extractor</h2>
+                     <span class="card__description">Utilized python to create a program that takes in a pdf file and extracts all relavent dates and statistics in a text file</span>
                      <a href="#" class="card__button">Read More</a>
                   </div>
                </article>
    
                <article class="card__article">
-                  <img src="gumroad.jpeg" alt="image" class="card__img">
-   
-                  <div class="card__data">
-                     <span class="card__description">Poon Hill, Nepal</span>
-                     <h2 class="card__title">Starry Night</h2>
-                     <a href="#" class="card__button">Read More</a>
-                  </div>
-               </article>
-   
+                <img src="pics/website.jpeg" alt="image" class="card__img">
+                <div class="card__data">
+                   <h2 class="card__title">Personal Website</h2>
+                   <span class="card__description">Designed my personal website. Created UI/UX designs and utilized html/css javascript and react</span>
+                   <a href="#" class="card__button">Read More</a>
+                </div>
+             </article>
+
                <article class="card__article">
-                  <img src="numbertiles.jpeg" alt="image" class="card__img">
+                  <img src="pics/numbertiles.jpeg" alt="image" class="card__img">
    
                   <div class="card__data">
-                     <span class="card__description">Bojcin Forest, Serbia</span>
-                     <h2 class="card__title">Path Of Peace</h2>
+                    <h2 class="card__title">Number Tiles</h2>
+                     <span class="card__description">First CS project I even made. Created the number tiles game using Java and GUIs</span>
                      <a href="#" class="card__button">Read More</a>
                   </div>
                </article>
 
                <article class="card__article">
-                <img src="Wordle.jpeg" alt="image" class="card__img">
+                <img src="pics/Wordle.jpeg" alt="image" class="card__img">
  
                 <div class="card__data">
-                   <span class="card__description">Poon Hill, Nepal</span>
-                   <h2 class="card__title">Starry Night</h2>
+                    <h2 class="card__title">Worlde Dupe</h2>
+                   <span class="card__description">Designed Wordle using C++ </span>
                    <a href="#" class="card__button">Read More</a>
                 </div>
              </article>
 
              <article class="card__article">
-                <img src="gumroad.jpeg" alt="image" class="card__img">
- 
+                <img src="pics/tictactoe.jpeg" alt="image" class="card__img">
                 <div class="card__data">
-                   <span class="card__description">Poon Hill, Nepal</span>
-                   <h2 class="card__title">Starry Night</h2>
+                   <h2 class="card__title">AI Tic-Tac-Toe</h2>
+                   <span class="card__description">Created a game of tic tac toe in terminal using data structures. Game uses AI when being played against computer.</span>
                    <a href="#" class="card__button">Read More</a>
                 </div>
              </article>
@@ -215,11 +245,28 @@
             </div>
          </div>
     </section>
+
     <section class="contact" id="contact">
-        <h1>Contact</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="info-title">·········   CONTACT   ·········</h2>
+                <p>If you have opportunities or are interested in collaboration, please email me. You can also connect on social media for questions or just to say hi! My inbox is always open, and I'll try to get back as soon as possible.
+                </p>
+            
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
     </section>
+    
 
     <script src="scripts.js"></script>
+    <script src="home.js"></script>
+
 </body>
 
 </html>
