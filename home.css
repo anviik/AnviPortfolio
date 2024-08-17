@@ -15,7 +15,7 @@
 
 .logo {
     font-size: 30px; /* Slightly larger font size for "Anvi Kudaraya" */
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
@@ -31,7 +31,7 @@
 }
 
 .logo span {
-    text-shadow: 0 0 25px #000;
+    text-shadow: 0 0 25px #ffffff;
 }
 
 .navbar {
@@ -40,7 +40,7 @@
 
 .navbar a {
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(168, 136, 255);
     margin-top: 5px;
     margin-left: 2rem;
     margin-right: -3px;
@@ -58,7 +58,7 @@
 
 .bx-menu {
     font-size: 30px; /* Corrected font-size */
-    color: #000000;
+    color: #ffffff;
     display: none; /* Hidden by default */
 }
 
@@ -80,7 +80,7 @@ span{
     color: #ffffff;
 }
 .logo span{
-    color:#000000
+    color:#9c4141
 }
 
 .home-content h3{
@@ -120,6 +120,7 @@ span{
     font-weight: 500;
     line-height: 1.5;
     max-width: 1000px;
+    color: #ffffff
 }
 .social-icons a{
     display: inline-flex;
@@ -128,10 +129,10 @@ span{
     width: 3rem;
     height: 3rem;
     background: transparent;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     font-size: 2rem;
     border-radius: 50%;
-    color: #000;
+    color: #ffffff;
     margin: 1.2rem 1rem 1.5rem 0;
     transition: 0.3s ease-in-out;
     text-decoration: none;
@@ -275,8 +276,9 @@ span{
         left: 0;
         width: 100%;
         padding: 0.8rem 1rem;
-        background: rgb(103, 157, 244);
-        backdrop-filter: blur(10px);
+        background: #000;
+        /* background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px); */
         display: flex;
         justify-content: space-between; 
         align-items: center;
@@ -292,11 +294,12 @@ span{
         width: 50%;
         height: 500px;
         padding: 1rem 3%;
-        background: rgb(103, 157, 244);
+        background: #000;
         border-bottom-left-radius: 2rem;
-        border-left: 2px solid rgb(0, 0, 0);
-        border-bottom: 2px solid rgb(0, 0, 0);
+        border-left: 2px solid rgb(233, 105, 105);
+        border-bottom: 2px solid rgb(233, 105, 105);
         display: none; /* Initially hide the navbar */
+        max-height:350px;
     }
 
     .navbar.active {
@@ -305,8 +308,8 @@ span{
 
     .navbar a {
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.5rem;
+        margin: 1rem 0;
         color: white;
     }
     .home {

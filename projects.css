@@ -95,7 +95,7 @@ img {
   text-align: center;
   font-size: 2rem;
   margin-top: -40px;
-  color:black;
+  color:rgb(255, 255, 255);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -118,6 +118,7 @@ img {
 .card__article {
   position: relative;
   overflow: hidden;
+  color: var(--title-color);
   
 }
 
@@ -140,12 +141,14 @@ img {
   margin-inline: auto;
   opacity: 0;
   transition: opacity 1s 1s;
+  color: black;
 }
 
 .card__description {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
+  color: black;
 }
 
 .card__title {
