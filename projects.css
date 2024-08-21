@@ -118,7 +118,7 @@ img {
 .card__article {
   position: relative;
   overflow: hidden;
-  color: var(--title-color);
+  color: black;
   
 }
 
@@ -130,8 +130,8 @@ img {
 
 .card__data {
   width: 280px;
-  background-color: var(--container-color);
-  padding: 1.5rem 2rem;
+  background-color: white;
+  padding: 1.5rem 0.2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
   position: absolute;
@@ -146,30 +146,18 @@ img {
 
 .card__description {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 13px;
   margin-bottom: .25rem;
   color: black;
 }
 
 .card__title {
-  font-size: var(--h2-font-size);
+  font-size: 20px;
   font-weight: 500;
   color: var(--title-color);
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
 }
 
-.card__button {
-  text-decoration: none;
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  color: var(--first-color);
-}
-
-.card__button:hover {
-  text-decoration: underline;
-}
-
-/* Naming animations in hover */
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
   opacity: 1;
@@ -186,6 +174,28 @@ img {
 
 .card__article:not(:hover) .card__data {
   animation: remove-data 1s forwards;
+}
+
+.icons a{
+  display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.icons a:hover{
+  color: #e03a82;
+    transform: scale(1.1)translateY(5px);
+    box-shadow: 0 0 25px #000000;
+    background-color: #ffffff;
 }
 
 /* Card animation */

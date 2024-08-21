@@ -1,3 +1,90 @@
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 7px;
+    left: 85px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    background-color: transparent; 
+    box-shadow: none; 
+  }
+  
+  .navbar.scrolled {
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 18px;
+  }
+  
+  
+  section {
+    min-height: 100vh;
+    /* padding: 10rem 7% 2rem; */
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: center; */
+      text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .home {
+    display: flex;
+    align-items: center;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .home-content h3 {
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .home-content  {
+        
+    color:rgb(0, 0, 0);
+    font-family: Arial, sans-serif; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 15px;
+  }
+    
 .header {
     position: fixed;
     top: 0;
@@ -40,8 +127,7 @@
 
 .navbar a {
     font-size: 1.2rem;
-    color: rgb(168, 136, 255);
-    margin-top: 5px;
+    margin-top: 1px;
     margin-left: 2rem;
     margin-right: -3px;
     font-weight: 700;
@@ -49,6 +135,7 @@
     border-bottom: 3px solid transparent;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    color: #9c4141;
 }
 
 .navbar a:hover,
@@ -56,12 +143,14 @@
     color: #ffffff;
 }
 
-.bx-menu {
+ .bx-menu {
     font-size: 30px; /* Corrected font-size */
     color: #ffffff;
     display: none; /* Hidden by default */
 }
-
+#menu-icon {
+    display: none;
+  }
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -94,27 +183,63 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
-.text-animation{
-    font-size: 1rem;
-}
-.home-img{
-    border-radius: 50%;
+
+.home p{
+    font-size: 30px;
 }
 
-.home-img img{
-    position: relative;
-    top: 3rem;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px #ffffff;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
+.title-wrapper{
+    box-sizing: content-box;
+    /* background-color: #57a07f; */
+    height: 40px;
+    display: flex;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 9px;
 }
-.home-img img:hover{
-    box-shadow: 0 0 25px #ffffff, 
-                0 0 50px #ffffff, 
-                0 0 100px #ffffff,  
+
+.home-content .title-wrapper p{
+    font-size: 32px;
 }
+
+.words{
+    overflow: hidden;
+}
+.words span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 8s infinite;
+    color: rgb(91, 29, 246);
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
 .home-content p{
     font-size: 1rem;
     font-weight: 500;
@@ -122,7 +247,7 @@ span{
     max-width: 1000px;
     color: #ffffff
 }
-.social-icons a{
+.home .social-icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +263,7 @@ span{
     text-decoration: none;
 }
 
-.social-icons a:hover{
+.home .social-icons a:hover{
     color: #3a47e0;
     transform: scale(1.3)translateY(-5px);
     box-shadow: 0 0 25px #000000;
@@ -162,7 +287,7 @@ span{
 
 .btn:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 50px #fc0000;
+    box-shadow: 0 0 50px #fc00da;
 }
 
 .btn-group{
@@ -177,91 +302,12 @@ span{
     box-shadow: 0 0 25px transparent;
 }
 .btn-group a:nth-of-type(2):hover{
-    box-shadow: 0 0 25px #fc0000;
+    box-shadow: 0 0 25px #ff00c3;
     background-color: aquamarine;
     color: black;
 }
 
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden; /* Ensures the text and animation do not overflow */
-}
-.text-animation span{
-    position: relative;
-}
-.text-animation span:before{
-    content: "Web Developer";
-    color: #3a4df6;
-    animation: words 20s infinite;
-}
-.text-animation span:after{
-    content: "";
-    background-color:white;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 25s steps(15) infinite;
-}
 
-@keyframes cursor{
-    to{
-        border-left: 2px solid;
-    }
-}
-@keyframes words{
-    0%, 
-    20%{
-        content: "Front-end Designer"
-    }
-    21%, 
-    40%{
-        content: "Web Designer"
-    }
-    41%, 
-    60%{
-        content: "UI/UX Designer"
-    }
-    61%, 
-    80%{
-        content: "Full-Stack Developer"
-    }
-    81%, 
-    100%{
-        content: "Backend Developer"
-    }
-}
-
-@keyframes typing{
-    10%, 
-    15%, 
-    30%, 
-    35%, 
-    50%, 
-    55%, 
-    70%, 
-    75%, 
-    90%, 
-    95%{
-        width: 0;
-    }
-    5%, 
-    20%, 
-    25%, 
-    40%, 
-    45%, 
-    60%, 
-    65%, 
-    80%, 
-    85%{
-        width: calc(100% + 8px);
-    }
-}
 
 @media(max-width:895px){
     #menu-icon {
