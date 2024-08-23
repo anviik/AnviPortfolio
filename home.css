@@ -200,6 +200,7 @@ span{
 
 .home-content .title-wrapper p{
     font-size: 32px;
+
 }
 
 .words{
@@ -333,7 +334,7 @@ span{
     }
 
     .navbar {
-        position: absolute;
+        position:fixed;
         top: 100%;
         margin-left: 400px;
         right: 0;
@@ -373,7 +374,13 @@ span{
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
-        width: 56vw;
+    .title-wrapper p{
+        display: inline-flex; 
+        align-items: center; 
+        white-space: nowrap; 
     }
+    .words{
+        white-space: nowrap; 
+    }
+
 }
